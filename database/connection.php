@@ -1,8 +1,6 @@
 <?php
-$connection = mysqli_connect('localhost','root', 'root', 'NBA database');
+$connection = mysqli_connect('localhost', 'root', 'root', 'newNBA');
 if (!$connection) {
     die("CONNECTION FAILED");
 }
-
-
 ?>

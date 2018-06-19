@@ -1,12 +1,12 @@
-<?PHP include "connection.php"; ?>
-<?PHP include "query.php"; ?>
+<?php include "../database/connection.php"; ?>
+<?php include "query.php"; ?>
 <?php
 session_start();
 $query = $_SESSION['query'];
 class Player {
     private $name;
     private $age;
-    private $nationality
+    private $nationality;
     private $jerseyNum;
     
     function __construct($name, $age, $nationality, $jerseyNum) {
@@ -29,7 +29,7 @@ class Player {
     }
     
     public function getJerseyNum() {
-        return this->$jerseyNum;
+        return $this->$jerseyNum;
     }
     
     
@@ -73,8 +73,4 @@ class Player {
         return $row;
     }
 }
-
-
-
-
 ?>
